@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="12" failures="6" disabled="0" errors="0" time="5.953" timestamp="2022-04-05T22:32:06" name="AllTests">
+  <testsuite name="run_length_encode_trivial_cases" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:06">
+    <testcase name="trivial_cases" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:06" classname="run_length_encode_trivial_cases" />
+  </testsuite>
+  <testsuite name="run_length_encode_error_handling" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:06">
+    <testcase name="error_handling" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:06" classname="run_length_encode_error_handling" />
+  </testsuite>
+  <testsuite name="run_length_encode_just_one_run" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:06">
+    <testcase name="just_one_run" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:06" classname="run_length_encode_just_one_run" />
+  </testsuite>
+  <testsuite name="run_length_encode_mixture" tests="1" failures="0" disabled="0" errors="0" time="0.189" timestamp="2022-04-05T22:32:06">
+    <testcase name="mixture" status="run" result="completed" time="0.189" timestamp="2022-04-05T22:32:06" classname="run_length_encode_mixture" />
+  </testsuite>
+  <testsuite name="longest_frequent_substring_trivial_cases" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:06">
+    <testcase name="trivial_cases" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:06" classname="longest_frequent_substring_trivial_cases" />
+  </testsuite>
+  <testsuite name="longest_frequent_substring_nontrivial_cases" tests="1" failures="0" disabled="0" errors="0" time="5.762" timestamp="2022-04-05T22:32:06">
+    <testcase name="nontrivial_cases" status="run" result="completed" time="5.762" timestamp="2022-04-05T22:32:06" classname="longest_frequent_substring_nontrivial_cases" />
+  </testsuite>
+  <testsuite name="reformat_date_pattern_1" tests="1" failures="1" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:12">
+    <testcase name="pattern_1" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:12" classname="reformat_date_pattern_1">
+      <failure message="algorithms_test.cpp:284&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-2-3&quot;)&#x0A;    Which is: &quot;2022-2-3&quot;" type=""><![CDATA[algorithms_test.cpp:284
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-2-3")
+    Which is: "2022-2-3"]]></failure>
+      <failure message="algorithms_test.cpp:285&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-3&quot;)&#x0A;    Which is: &quot;2022-02-3&quot;" type=""><![CDATA[algorithms_test.cpp:285
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-3")
+    Which is: "2022-02-3"]]></failure>
+      <failure message="algorithms_test.cpp:286&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-2-03&quot;)&#x0A;    Which is: &quot;2022-2-03&quot;" type=""><![CDATA[algorithms_test.cpp:286
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-2-03")
+    Which is: "2022-2-03"]]></failure>
+      <failure message="algorithms_test.cpp:289&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot; 2022-02-03&quot;)&#x0A;    Which is: &quot;-0-2022-02-03&quot;" type=""><![CDATA[algorithms_test.cpp:289
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date(" 2022-02-03")
+    Which is: "-0-2022-02-03"]]></failure>
+      <failure message="algorithms_test.cpp:290&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;  2022-02-03&quot;)&#x0A;    Which is: &quot;-0- 2022-02-03&quot;" type=""><![CDATA[algorithms_test.cpp:290
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("  2022-02-03")
+    Which is: "-0- 2022-02-03"]]></failure>
+      <failure message="algorithms_test.cpp:291&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;   2022-02-03&quot;)&#x0A;    Which is: &quot;-0-  2022-02-03&quot;" type=""><![CDATA[algorithms_test.cpp:291
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("   2022-02-03")
+    Which is: "-0-  2022-02-03"]]></failure>
+      <failure message="algorithms_test.cpp:292&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;    2022-02-03&quot;)&#x0A;    Which is: &quot;-0-   2022-02-03&quot;" type=""><![CDATA[algorithms_test.cpp:292
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("    2022-02-03")
+    Which is: "-0-   2022-02-03"]]></failure>
+      <failure message="algorithms_test.cpp:293&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;     2022-02-03&quot;)&#x0A;    Which is: &quot;-0-    2022-02-03&quot;" type=""><![CDATA[algorithms_test.cpp:293
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("     2022-02-03")
+    Which is: "-0-    2022-02-03"]]></failure>
+      <failure message="algorithms_test.cpp:296&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-03 &quot;)&#x0A;    Which is: &quot;2022-02-03 &quot;" type=""><![CDATA[algorithms_test.cpp:296
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-03 ")
+    Which is: "2022-02-03 "]]></failure>
+      <failure message="algorithms_test.cpp:297&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-03  &quot;)&#x0A;    Which is: &quot;2022-02-03  &quot;" type=""><![CDATA[algorithms_test.cpp:297
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-03  ")
+    Which is: "2022-02-03  "]]></failure>
+      <failure message="algorithms_test.cpp:298&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-03   &quot;)&#x0A;    Which is: &quot;2022-02-03   &quot;" type=""><![CDATA[algorithms_test.cpp:298
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-03   ")
+    Which is: "2022-02-03   "]]></failure>
+      <failure message="algorithms_test.cpp:299&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-03    &quot;)&#x0A;    Which is: &quot;2022-02-03    &quot;" type=""><![CDATA[algorithms_test.cpp:299
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-03    ")
+    Which is: "2022-02-03    "]]></failure>
+      <failure message="algorithms_test.cpp:300&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2022-02-03     &quot;)&#x0A;    Which is: &quot;2022-02-03     &quot;" type=""><![CDATA[algorithms_test.cpp:300
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2022-02-03     ")
+    Which is: "2022-02-03     "]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="reformat_date_pattern_2" tests="1" failures="1" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:12">
+    <testcase name="pattern_2" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:12" classname="reformat_date_pattern_2">
+      <failure message="algorithms_test.cpp:305&#x0A;Expected equality of these values:&#x0A;  &quot;2000-01-01&quot;&#x0A;  algorithms::reformat_date(&quot;01/01/2000&quot;)&#x0A;    Which is: &quot;20002000-0101-0101&quot;" type=""><![CDATA[algorithms_test.cpp:305
+Expected equality of these values:
+  "2000-01-01"
+  algorithms::reformat_date("01/01/2000")
+    Which is: "20002000-0101-0101"]]></failure>
+      <failure message="algorithms_test.cpp:306&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;02/03/2022&quot;)&#x0A;    Which is: &quot;20222022-0202-0303&quot;" type=""><![CDATA[algorithms_test.cpp:306
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("02/03/2022")
+    Which is: "20222022-0202-0303"]]></failure>
+      <failure message="algorithms_test.cpp:309&#x0A;Expected equality of these values:&#x0A;  &quot;1900-02-02&quot;&#x0A;  algorithms::reformat_date(&quot;02/02/1900&quot;)&#x0A;    Which is: &quot;19001900-0202-0202&quot;" type=""><![CDATA[algorithms_test.cpp:309
+Expected equality of these values:
+  "1900-02-02"
+  algorithms::reformat_date("02/02/1900")
+    Which is: "19001900-0202-0202"]]></failure>
+      <failure message="algorithms_test.cpp:310&#x0A;Expected equality of these values:&#x0A;  &quot;2099-02-02&quot;&#x0A;  algorithms::reformat_date(&quot;02/02/2099&quot;)&#x0A;    Which is: &quot;20992099-0202-0202&quot;" type=""><![CDATA[algorithms_test.cpp:310
+Expected equality of these values:
+  "2099-02-02"
+  algorithms::reformat_date("02/02/2099")
+    Which is: "20992099-0202-0202"]]></failure>
+      <failure message="algorithms_test.cpp:313&#x0A;Expected equality of these values:&#x0A;  &quot;2022-01-02&quot;&#x0A;  algorithms::reformat_date(&quot;01/02/2022&quot;)&#x0A;    Which is: &quot;20222022-0101-0202&quot;" type=""><![CDATA[algorithms_test.cpp:313
+Expected equality of these values:
+  "2022-01-02"
+  algorithms::reformat_date("01/02/2022")
+    Which is: "20222022-0101-0202"]]></failure>
+      <failure message="algorithms_test.cpp:314&#x0A;Expected equality of these values:&#x0A;  &quot;2022-12-02&quot;&#x0A;  algorithms::reformat_date(&quot;12/02/2022&quot;)&#x0A;    Which is: &quot;20222022-1212-0202&quot;" type=""><![CDATA[algorithms_test.cpp:314
+Expected equality of these values:
+  "2022-12-02"
+  algorithms::reformat_date("12/02/2022")
+    Which is: "20222022-1212-0202"]]></failure>
+      <failure message="algorithms_test.cpp:317&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-01&quot;&#x0A;  algorithms::reformat_date(&quot;02/01/2022&quot;)&#x0A;    Which is: &quot;20222022-0202-0101&quot;" type=""><![CDATA[algorithms_test.cpp:317
+Expected equality of these values:
+  "2022-02-01"
+  algorithms::reformat_date("02/01/2022")
+    Which is: "20222022-0202-0101"]]></failure>
+      <failure message="algorithms_test.cpp:318&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-31&quot;&#x0A;  algorithms::reformat_date(&quot;02/31/2022&quot;)&#x0A;    Which is: &quot;20222022-0202-3131&quot;" type=""><![CDATA[algorithms_test.cpp:318
+Expected equality of these values:
+  "2022-02-31"
+  algorithms::reformat_date("02/31/2022")
+    Which is: "20222022-0202-3131"]]></failure>
+      <failure message="algorithms_test.cpp:321&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2/3/2022&quot;)&#x0A;    Which is: &quot;20222022-22-33&quot;" type=""><![CDATA[algorithms_test.cpp:321
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2/3/2022")
+    Which is: "20222022-22-33"]]></failure>
+      <failure message="algorithms_test.cpp:322&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;02/3/2022&quot;)&#x0A;    Which is: &quot;20222022-0202-33&quot;" type=""><![CDATA[algorithms_test.cpp:322
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("02/3/2022")
+    Which is: "20222022-0202-33"]]></failure>
+      <failure message="algorithms_test.cpp:323&#x0A;Expected equality of these values:&#x0A;  &quot;2022-02-03&quot;&#x0A;  algorithms::reformat_date(&quot;2/03/2022&quot;)&#x0A;    Which is: &quot;20222022-22-0303&quot;" type=""><![CDATA[algorithms_test.cpp:323
+Expected equality of these values:
+  "2022-02-03"
+  algorithms::reformat_date("2/03/2022")
+    Which is: "20222022-22-0303"]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="reformat_date_pattern_3" tests="1" failures="1" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:12">
+    <testcase name="pattern_3" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:12" classname="reformat_date_pattern_3">
+      <failure message="unknown file&#x0A;C++ exception with description &quot;Invalid Argument.&quot; thrown in the test body." type=""><![CDATA[unknown file
+C++ exception with description "Invalid Argument." thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="reformat_date_pattern_4" tests="1" failures="1" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:12">
+    <testcase name="pattern_4" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:12" classname="reformat_date_pattern_4">
+      <failure message="unknown file&#x0A;C++ exception with description &quot;Invalid Argument.&quot; thrown in the test body." type=""><![CDATA[unknown file
+C++ exception with description "Invalid Argument." thrown in the test body.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="reformat_invalid_format" tests="1" failures="1" disabled="0" errors="0" time="0.001" timestamp="2022-04-05T22:32:12">
+    <testcase name="invalid_format" status="run" result="completed" time="0.001" timestamp="2022-04-05T22:32:12" classname="reformat_invalid_format">
+      <failure message="algorithms_test.cpp:395&#x0A;Expected: algorithms::reformat_date(&quot;&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:395
+Expected: algorithms::reformat_date("") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:396&#x0A;Expected: algorithms::reformat_date(&quot;    &quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:396
+Expected: algorithms::reformat_date("    ") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:397&#x0A;Expected: algorithms::reformat_date(&quot;the quick brown fox&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:397
+Expected: algorithms::reformat_date("the quick brown fox") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:400&#x0A;Expected: algorithms::reformat_date(&quot;abc2001-05-10&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:400
+Expected: algorithms::reformat_date("abc2001-05-10") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:401&#x0A;Expected: algorithms::reformat_date(&quot;abc05/10/2001&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:401
+Expected: algorithms::reformat_date("abc05/10/2001") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:405&#x0A;Expected: algorithms::reformat_date(&quot;2001-05-10abc&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:405
+Expected: algorithms::reformat_date("2001-05-10abc") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:406&#x0A;Expected: algorithms::reformat_date(&quot;05/10/2001abc&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:406
+Expected: algorithms::reformat_date("05/10/2001abc") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:410&#x0A;Expected: algorithms::reformat_date(&quot;2000-01-01-01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:410
+Expected: algorithms::reformat_date("2000-01-01-01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:411&#x0A;Expected: algorithms::reformat_date(&quot;01/01/01/2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:411
+Expected: algorithms::reformat_date("01/01/01/2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:415&#x0A;Expected: algorithms::reformat_date(&quot;2000-01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:415
+Expected: algorithms::reformat_date("2000-01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:416&#x0A;Expected: algorithms::reformat_date(&quot;2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:416
+Expected: algorithms::reformat_date("2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:417&#x0A;Expected: algorithms::reformat_date(&quot;01/2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:417
+Expected: algorithms::reformat_date("01/2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:418&#x0A;Expected: algorithms::reformat_date(&quot;2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:418
+Expected: algorithms::reformat_date("2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:419&#x0A;Expected: algorithms::reformat_date(&quot;28, 2021&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:419
+Expected: algorithms::reformat_date("28, 2021") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:420&#x0A;Expected: algorithms::reformat_date(&quot;january, 2021&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:420
+Expected: algorithms::reformat_date("january, 2021") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:421&#x0A;Expected: algorithms::reformat_date(&quot;january 28&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:421
+Expected: algorithms::reformat_date("january 28") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:424&#x0A;Expected: algorithms::reformat_date(&quot;abcd-01-01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:424
+Expected: algorithms::reformat_date("abcd-01-01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:425&#x0A;Expected: algorithms::reformat_date(&quot;2000-ab-01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:425
+Expected: algorithms::reformat_date("2000-ab-01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:426&#x0A;Expected: algorithms::reformat_date(&quot;2000-01-ab&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:426
+Expected: algorithms::reformat_date("2000-01-ab") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:427&#x0A;Expected: algorithms::reformat_date(&quot;ab/01/2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:427
+Expected: algorithms::reformat_date("ab/01/2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:428&#x0A;Expected: algorithms::reformat_date(&quot;01/ab/2000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:428
+Expected: algorithms::reformat_date("01/ab/2000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:429&#x0A;Expected: algorithms::reformat_date(&quot;01/01/abcd&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:429
+Expected: algorithms::reformat_date("01/01/abcd") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:434&#x0A;Expected: algorithms::reformat_date(&quot;-01-01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:434
+Expected: algorithms::reformat_date("-01-01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:435&#x0A;Expected: algorithms::reformat_date(&quot;2000--01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:435
+Expected: algorithms::reformat_date("2000--01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:436&#x0A;Expected: algorithms::reformat_date(&quot;2000-01-&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:436
+Expected: algorithms::reformat_date("2000-01-") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:437&#x0A;Expected: algorithms::reformat_date(&quot;/01/01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:437
+Expected: algorithms::reformat_date("/01/01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:438&#x0A;Expected: algorithms::reformat_date(&quot;2000//01&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:438
+Expected: algorithms::reformat_date("2000//01") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:439&#x0A;Expected: algorithms::reformat_date(&quot;2000/01/&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:439
+Expected: algorithms::reformat_date("2000/01/") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:440&#x0A;Expected: algorithms::reformat_date(&quot;, 2021&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:440
+Expected: algorithms::reformat_date(", 2021") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:441&#x0A;Expected: algorithms::reformat_date(&quot;january 28,&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:441
+Expected: algorithms::reformat_date("january 28,") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="reformat_invalid_field" tests="1" failures="1" disabled="0" errors="0" time="0" timestamp="2022-04-05T22:32:12">
+    <testcase name="invalid_field" status="run" result="completed" time="0" timestamp="2022-04-05T22:32:12" classname="reformat_invalid_field">
+      <failure message="algorithms_test.cpp:459&#x0A;Expected: algorithms::reformat_date(&quot;1899-07-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:459
+Expected: algorithms::reformat_date("1899-07-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:460&#x0A;Expected: algorithms::reformat_date(&quot;07/22/1899&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:460
+Expected: algorithms::reformat_date("07/22/1899") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:462&#x0A;Expected: algorithms::reformat_date(&quot;999-07-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:462
+Expected: algorithms::reformat_date("999-07-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:463&#x0A;Expected: algorithms::reformat_date(&quot;07/22/999&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:463
+Expected: algorithms::reformat_date("07/22/999") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:465&#x0A;Expected: algorithms::reformat_date(&quot;0-07-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:465
+Expected: algorithms::reformat_date("0-07-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:466&#x0A;Expected: algorithms::reformat_date(&quot;07/22/0&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:466
+Expected: algorithms::reformat_date("07/22/0") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:470&#x0A;Expected: algorithms::reformat_date(&quot;2100-07-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:470
+Expected: algorithms::reformat_date("2100-07-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:471&#x0A;Expected: algorithms::reformat_date(&quot;07/22/2100&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:471
+Expected: algorithms::reformat_date("07/22/2100") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:473&#x0A;Expected: algorithms::reformat_date(&quot;5000-07-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:473
+Expected: algorithms::reformat_date("5000-07-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:474&#x0A;Expected: algorithms::reformat_date(&quot;07/22/5000&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:474
+Expected: algorithms::reformat_date("07/22/5000") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:478&#x0A;Expected: algorithms::reformat_date(&quot;2010-00-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:478
+Expected: algorithms::reformat_date("2010-00-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:479&#x0A;Expected: algorithms::reformat_date(&quot;00/22/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:479
+Expected: algorithms::reformat_date("00/22/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:482&#x0A;Expected: algorithms::reformat_date(&quot;2010-13-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:482
+Expected: algorithms::reformat_date("2010-13-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:483&#x0A;Expected: algorithms::reformat_date(&quot;13/22/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:483
+Expected: algorithms::reformat_date("13/22/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:484&#x0A;Expected: algorithms::reformat_date(&quot;2010-100-22&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:484
+Expected: algorithms::reformat_date("2010-100-22") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:485&#x0A;Expected: algorithms::reformat_date(&quot;100/22/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:485
+Expected: algorithms::reformat_date("100/22/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:488&#x0A;Expected: algorithms::reformat_date(&quot;2010-07-0&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:488
+Expected: algorithms::reformat_date("2010-07-0") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:489&#x0A;Expected: algorithms::reformat_date(&quot;07/00/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:489
+Expected: algorithms::reformat_date("07/00/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:493&#x0A;Expected: algorithms::reformat_date(&quot;2010-07-32&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:493
+Expected: algorithms::reformat_date("2010-07-32") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:494&#x0A;Expected: algorithms::reformat_date(&quot;07/32/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:494
+Expected: algorithms::reformat_date("07/32/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:496&#x0A;Expected: algorithms::reformat_date(&quot;2010-07-100&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:496
+Expected: algorithms::reformat_date("2010-07-100") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+      <failure message="algorithms_test.cpp:497&#x0A;Expected: algorithms::reformat_date(&quot;07/100/2010&quot;) throws an exception of type std::invalid_argument.&#x0A;  Actual: it throws nothing." type=""><![CDATA[algorithms_test.cpp:497
+Expected: algorithms::reformat_date("07/100/2010") throws an exception of type std::invalid_argument.
+  Actual: it throws nothing.]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
